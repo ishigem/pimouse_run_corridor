@@ -3,7 +3,7 @@ import unittest, rostest
 import rosnode, rospy
 import time
 
-class WallStopAccelTest(unuttest.TestCase):
+class WallStopAccelTest(unittest.TestCase):
     def set_and_get(self, lf, ls, rs, rf):
         with open("/dev/rtlightsensor0", "w") as f:
             f.write("%d %d %d %d\n" % (rf, rs, ls, lf))
