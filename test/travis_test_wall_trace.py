@@ -24,7 +24,7 @@ class WallTraceTest(unittest.TestCase):
         left, right = self.set_and_get(0,5,1000,0) #side direction is not a trigger of stop
         self.assertTrue(left == right != 0, "stop wrongly by side sensors")
 
-        left, right = self.set_and_get(0,10,0,0) #surve to left
+        left, right = self.set_and_get(0,11,0,0) #surve to left
         self.assertTrue(left < right,"don't curve to left")
 
         left, right = self.set_and_get(0,200,0,0) #surve to right
