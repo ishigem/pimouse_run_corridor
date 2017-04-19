@@ -15,7 +15,7 @@ class WallStopTest(unuttest.TestCase):
             left = int(lf.readline().rstrip())
             right = int(rf.readline().rstrip())
 
-       return left, right
+        return left, right
 
     def test_io(self):
         left, right = self.set_and_get(400,100,100,0) #total: 600
